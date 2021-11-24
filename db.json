@@ -10,8 +10,8 @@
     {
       "name": "akash",
       "email": "akashsharma.zak@gmail.com",
-      "salary": "15235",
-      "designation": "Web Developer",
+      "salary": "17000",
+      "designation": "Graphic designer",
       "id": 4
     },
     {
@@ -27,6 +27,20 @@
       "salary": "30000",
       "designation": "Doctor",
       "id": 7
+    },
+    {
+      "name": "prasad",
+      "email": "cunehapu@norwegischlernen.info",
+      "salary": "30000",
+      "designation": "Photographer",
+      "id": 8
+    },
+    {
+      "name": "tribhuvan",
+      "email": "jigiy21163@luxiu2.com",
+      "salary": "35000",
+      "designation": "Civil Engineer",
+      "id": 9
     }
   ]
 }

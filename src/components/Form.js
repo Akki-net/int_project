@@ -1,11 +1,17 @@
 import React, { useState } from 'react'
 import personService from '../services/persons'
 
-const Form = ({persons, setPersons}) => {
-    const [ name, setName ] = useState('')
-  const [ email, setEmail ] = useState('')
-  const [ salary, setSalary ] = useState('')
-  const [ designation, setDesignation ] = useState('') 
+const Form = ({
+    name,
+    setName,
+    salary,
+    setSalary,
+    email,
+    setEmail,
+    designation,
+    setDesignation,
+    persons, setPersons}) => {
+    
   const [ errMsg, setErrMsg ] = useState(null)
 
   const submitHandler = event => {
@@ -20,8 +26,20 @@ const Form = ({persons, setPersons}) => {
           salary,
           designation
       }
+      const exists = persons.find(person => person.email === obj.email)
+      if(exists){
+        const result = window.confirm('Do you want to update the existing entity?')
+        if(result){
+            personService.update(exists.id, obj)
+            .then(newObj => {
+                setPersons(persons.map(person => person.email !== obj.email ?  person : newObj))
+            })
+        }
+      }
+      else{
       personService.create(obj)
       .then(rtnObj => setPersons(persons.concat(rtnObj)))
+      }
       setName('')
       setSalary('')
       setEmail('')

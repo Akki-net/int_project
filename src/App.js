@@ -6,6 +6,11 @@ import Search from './components/Search'
 
 const App = () => {
   const [ persons, setPersons ] = useState([])
+  const [ name, setName ] = useState('')
+  const [ email, setEmail ] = useState('')
+  const [ salary, setSalary ] = useState('')
+  const [ designation, setDesignation ] = useState('') 
+
   useEffect(() => {
     personService.getAll()
     .then(rtnPsn => setPersons(rtnPsn))
@@ -13,9 +18,23 @@ const App = () => {
 
   return (
     <div>
-      <Form persons={persons} setPersons={setPersons} />
+      <Form 
+      name={name}
+      setName={setName}
+      salary={salary}
+      setSalary={setSalary}
+      email={email}
+      setEmail={setEmail}
+      designation={designation}
+      setDesignation={setDesignation}
+      persons={persons} setPersons={setPersons} />
       <Search persons={persons} setPersons={setPersons} />
-      <Display persons={persons} setPersons={setPersons} />
+      <Display 
+      setName={setName}
+      setEmail={setEmail}
+      setSalary={setSalary}
+      setDesignation={setDesignation}
+      persons={persons} setPersons={setPersons} />
     </div>
   )
 }

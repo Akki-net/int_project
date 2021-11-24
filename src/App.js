@@ -10,12 +10,12 @@ const App = () => {
     personService.getAll()
     .then(rtnPsn => setPersons(rtnPsn))
   }, [])
-  
+
   return (
     <div>
       <Form persons={persons} setPersons={setPersons} />
       <Search persons={persons} setPersons={setPersons} />
-      <Display persons={persons} />
+      <Display persons={persons} setPersons={setPersons} />
     </div>
   )
 }

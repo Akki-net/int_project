@@ -8,32 +8,11 @@
       "designation": "chief operator"
     },
     {
-      "id": 2,
-      "name": "Mamta Palekar",
-      "email": "mamtasad751@gmail.com",
-      "salary": 40000,
-      "designation": "backend tester"
-    },
-    {
-      "id": 3,
-      "name": "Tribhuvan",
-      "email": "tribhuvan@gmail.com",
-      "salary": 20000,
-      "designation": "analyst"
-    },
-    {
       "name": "akash",
       "email": "akashsharma.zak@gmail.com",
       "salary": "15235",
       "designation": "Web Developer",
       "id": 4
-    },
-    {
-      "name": "akash",
-      "email": "akashsharma.zak@gmail.com",
-      "salary": "96258",
-      "designation": "Civil Engineer",
-      "id": 5
     },
     {
       "name": "nishi",
@@ -43,10 +22,10 @@
       "id": 6
     },
     {
-      "name": "prasad",
-      "email": "jigiy21163@luxiu2.com",
-      "salary": "15235",
-      "designation": "Web Developer",
+      "name": "mamta",
+      "email": "mamtasad751@gmail.com",
+      "salary": "30000",
+      "designation": "Doctor",
       "id": 7
     }
   ]

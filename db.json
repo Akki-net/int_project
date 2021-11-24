@@ -1,0 +1,39 @@
+{
+  "persons": [
+    {
+      "id": 1,
+      "name": "Hari",
+      "email": "harisingh123@gmail.com",
+      "salary": 32000,
+      "designation": "chief operator"
+    },
+    {
+      "id": 2,
+      "name": "Mamta Palekar",
+      "email": "mamtasad751@gmail.com",
+      "salary": 40000,
+      "designation": "backend tester"
+    },
+    {
+      "id": 3,
+      "name": "Tribhuvan",
+      "email": "tribhuvan@gmail.com",
+      "salary": 20000,
+      "designation": "analyst"
+    },
+    {
+      "name": "akash",
+      "email": "akashsharma.zak@gmail.com",
+      "salary": "15235",
+      "designation": "Web Developer",
+      "id": 4
+    },
+    {
+      "name": "akash",
+      "email": "akashsharma.zak@gmail.com",
+      "salary": "96258",
+      "designation": "Civil Engineer",
+      "id": 5
+    }
+  ]
+}

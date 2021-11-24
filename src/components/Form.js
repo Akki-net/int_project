@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import personService from '../services/persons'
 
-const Form = () => {
+const Form = ({persons, setPersons}) => {
     const [ name, setName ] = useState('')
   const [ email, setEmail ] = useState('')
   const [ salary, setSalary ] = useState('')
@@ -21,11 +21,13 @@ const Form = () => {
           designation
       }
       personService.create(obj)
+      .then(rtnObj => setPersons(persons.concat(rtnObj)))
       setName('')
       setSalary('')
       setEmail('')
       setDesignation('')
       setErrMsg(null)
+      
   }
 
     return (

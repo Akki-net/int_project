@@ -34,6 +34,20 @@
       "salary": "96258",
       "designation": "Civil Engineer",
       "id": 5
+    },
+    {
+      "name": "nishi",
+      "email": "betripelti@vusra.com",
+      "salary": "15235",
+      "designation": "Civil Engineer",
+      "id": 6
+    },
+    {
+      "name": "prasad",
+      "email": "jigiy21163@luxiu2.com",
+      "salary": "15235",
+      "designation": "Web Developer",
+      "id": 7
     }
   ]
 }
